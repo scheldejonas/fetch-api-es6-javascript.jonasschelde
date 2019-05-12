@@ -168,14 +168,18 @@ function post_comment(e) {
 
     const name = document.getElementById('name').value;
 
+    document.getElementById('name').value = '';
+
     const comment = document.getElementById('comment').value;
+
+    document.getElementById('comment').value = '';
 
     const exchange = get_chosen_exchanger();
 
     const asset = get_chosen_asset();
 
     comment_section.innerHTML = `
-        <h3>Hi ${name}.</h3>
+        <h3 class="comment_headline">Hi ${name}.</h3>
         
         <p>We are currently working on a very delightfull comment section for rating and commenting each exchanger.</p>
         
@@ -189,13 +193,11 @@ function post_comment(e) {
         
         <hr>
         
-        <p>For your choice as:</p>
-        
         <p>Exchanger: ${exchange.name} - ${exchange.website}</p>
         
         <p>Asset: ${asset.name}</p>
         
-        <p>Thank you a lot. And see you soon.</p>
+        <p>Thank you a lot. And see you soon. Follow on Github to receive notification about new things.</p>
     `;
 
 }

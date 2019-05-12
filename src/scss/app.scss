@@ -1069,6 +1069,7 @@ h1 {
 }
 
 header {
+  position: relative;
   background-color: $main;
   height: 80px;
   margin-bottom: 80px;
@@ -1180,4 +1181,19 @@ iframe {
 
 #comment_section {
   text-align: left;
+}
+
+#github_link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+#github_link img {
+  max-height: 40px;
+}
+
+.comment_headline {
+  margin-top: 20px;
 }
