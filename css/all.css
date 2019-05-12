@@ -983,4 +983,26 @@ select {
   margin-bottom: 2rem;
   border: solid 1px tomato; }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=all.css.map */
+
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 3em;
+}
+
+footer img {
+  width: 130px;
+  height: auto;
+}
+
+footer p {
+  color: black;
+  font-family: 'Courgette', cursive;
+}
+
+footer a {
+  text-decoration: none;
+}
