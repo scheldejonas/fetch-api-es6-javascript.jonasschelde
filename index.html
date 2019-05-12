@@ -3,13 +3,25 @@
 
 <head>
 
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Crypto Select</title>
+  <meta content="Text/html" charset="utf-8" lang="da" />
 
-  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:400,700" rel="stylesheet">
+  <title>Crypto checker</title>
 
-  <link rel="stylesheet" href="css/all.css">
+  <meta name="description" content="En simpel invitations app til dine fester">
+
+  <meta name="robots" content="index, follow">
+
+  <meta name="format-detection" content="telephone=no">
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:image" content="https://vanilla-javascript.jonasschelde.dk/favicon.ico">
+
+  <meta property="og:image" content="https://vanilla-javascript.jonasschelde.dk/images/jonas-logo.jpg">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
 </head>
 
@@ -21,44 +33,84 @@
 
   </header>
 
+
   <div class="container">
 
-    <label for="breeds">Select a Breed</label>
 
-    <select class="u-full-width" id="breeds"></select>
-    
-    <div class="card"></div>
-    
+    <div class="column one-half">
+
+      <label for="exchange_type">Select a Exchange Type</label>
+
+      <select class="u-full-width" id="exchange_type"></select>
+
+    </div>
+
+
+    <div class="column one-half">
+
+      <label for="assets_type">Select a Asset Type</label>
+
+      <select class="u-full-width" id="assets_type"></select>
+
+    </div>
+
+  </div>
+
+
+  <section id="iframe_section" class="container" >
+
+      <a href="" id="iframe_link" class="button" target="_blank">Go to Exchange website</a>
+
+      <iframe class="u-full-width" frameborder="0"></iframe>
+
+  </section>
+
+
+  <section id="comment_section" class="container">
+
+      <!-- Here - the comments wil dynamicly load -->
+
+  </section>
+
+
+  <div class="container">
+
     <form>
+
 
       <label for="name">Name</label>
 
       <input class="u-full-width" id="name" type="text">
-    
+
+
       <label for="comment">Comment</label>
 
       <textarea class="u-full-width" id="comment"></textarea>
-      
-      <button type="submit" id="submit">Submit</button>
+
+
+      <button type="submit" id="submit" class="button">Submit</button>
+
 
     </form>
 
-
-    <footer>
-
-      <a href="https://www.jonasschelde.dk/" target="_blank">
-
-        <img src="images/jonas-logo.png" title="Jonas Schelde" alt="Jonas Schelde logo" />
-
-        <p>Made by Schelde</p>
-
-      </a>
-
-    </footer>
-
   </div>
 
-  <script src="js/app.js"></script>
+
+  <footer>
+
+    <a href="https://www.jonasschelde.dk/" target="_blank">
+
+      <img src="images/jonas-logo.png" title="Jonas Schelde" alt="Jonas Schelde logo" />
+
+      <p>Made by Schelde</p>
+
+    </a>
+
+  </footer>
+
+
+  <script src="/dist/bundle.js"></script>
+
 
 </body>
 
