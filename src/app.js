@@ -77,9 +77,9 @@ function fetch_exchanges() {
 
             exchange_select.innerHTML = options;
 
-            iframe.src = data[0].website;
+            iframe.src = data[10].website;
 
-            iframe_link.href = data[0].website;
+            iframe_link.href = data[10].website;
 
         });
 

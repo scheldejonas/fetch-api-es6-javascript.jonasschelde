@@ -1,123 +1,124 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
-<head>
+  <head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta content="Text/html" charset="utf-8" lang="da" />
+    <meta content="Text/html" charset="utf-8" lang="da" />
 
-  <title>Crypto checker</title>
+    <title>Crypto checker</title>
 
-  <meta name="description" content="En simpel invitations app til dine fester">
+    <meta name="description" content="En simpel invitations app til dine fester">
 
-  <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow">
 
-  <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="telephone=no">
 
-  <meta property="og:type" content="website">
+    <meta property="og:type" content="website">
 
-  <meta property="og:image" content="https://fetch-api-es6-javascript.jonasschelde.dk/images/favicon.ico">
+    <meta property="og:image" content="https://fetch-api-es6-javascript.jonasschelde.dk/images/favicon.ico">
 
-  <meta property="og:image" content="https://fetch-api-es6-javascript.jonasschelde.dk/images/jonas-logo.jpg">
+    <meta property="og:image" content="https://fetch-api-es6-javascript.jonasschelde.dk/images/jonas-logo.jpg">
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <header>
+    <header>
 
-    <h1 class="logo">Crypto Select</h1>
+      <h1 class="logo">Crypto Select</h1>
 
-    <a id="github_link" href="https://github.com/scheldejonas/fetch-api-es6-javascript.jonasschelde" target="_blank">
+      <a id="github_link" href="https://github.com/scheldejonas/fetch-api-es6-javascript.jonasschelde" target="_blank">
 
-      <img src="/images/github.png">
+        <img src="/images/github.png">
 
-    </a>
+      </a>
 
-  </header>
-
-
-  <div class="container">
+    </header>
 
 
-    <div class="column one-half">
+    <div class="container">
 
-      <label for="exchange_type">Select a Exchange Type</label>
 
-      <select class="u-full-width" id="exchange_type"></select>
+      <div class="column one-half">
+
+        <label for="exchange_type">Select a Exchange Type</label>
+
+        <select class="u-full-width" id="exchange_type"></select>
+
+      </div>
+
+
+      <div class="column one-half">
+
+        <label for="assets_type">Select a Asset Type</label>
+
+        <select class="u-full-width" id="assets_type"></select>
+
+      </div>
 
     </div>
 
 
-    <div class="column one-half">
+    <section id="iframe_section" class="container" >
 
-      <label for="assets_type">Select a Asset Type</label>
+        <a href="" id="iframe_link" class="button" target="_blank">Go to Exchange website</a>
 
-      <select class="u-full-width" id="assets_type"></select>
+        <iframe class="u-full-width" frameborder="0"></iframe>
 
-    </div>
-
-  </div>
+    </section>
 
 
-  <section id="iframe_section" class="container" >
+    <section id="comment_section" class="container">
 
-      <a href="" id="iframe_link" class="button" target="_blank">Go to Exchange website</a>
+        <!-- Here - the comments wil dynamicly load -->
 
-      <iframe class="u-full-width" frameborder="0"></iframe>
-
-  </section>
+    </section>
 
 
-  <section id="comment_section" class="container">
+    <section class="container">
 
-      <!-- Here - the comments wil dynamicly load -->
-
-  </section>
+      <form>
 
 
-  <section class="container">
+        <label for="name">Name</label>
 
-    <form>
-
-
-      <label for="name">Name</label>
-
-      <input class="u-full-width" id="name" type="text">
+        <input class="u-full-width" id="name" type="text">
 
 
-      <label for="comment">Comment</label>
+        <label for="comment">Comment</label>
 
-      <textarea class="u-full-width" id="comment"></textarea>
-
-
-      <button type="submit" id="submit" class="button">Submit</button>
+        <textarea class="u-full-width" id="comment"></textarea>
 
 
-    </form>
-
-  </section>
+        <button type="submit" id="submit" class="button">Submit</button>
 
 
-  <footer>
+      </form>
 
-    <a href="https://www.jonasschelde.dk/" target="_blank">
-
-      <img src="images/jonas-logo.png" title="Jonas Schelde" alt="Jonas Schelde logo" />
-
-      <p>Made by Schelde</p>
-
-    </a>
-
-  </footer>
+    </section>
 
 
-  <script src="/dist/bundle.js"></script>
+    <footer>
+
+      <a href="https://www.jonasschelde.dk/" target="_blank">
+
+        <img src="images/jonas-logo.png" title="Jonas Schelde" alt="Jonas Schelde logo" />
+
+        <p>Made by Schelde</p>
+
+      </a>
+
+    </footer>
 
 
-</body>
+    <script src="/dist/bundle.js"></script>
+
+
+  </body>
 
 </html>

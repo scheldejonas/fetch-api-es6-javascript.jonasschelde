@@ -330,7 +330,7 @@ class Form {
     onSuccess(data, url) {                                                                                              console.log( data );
                                                                                                                         console.log( url );
 
-        this.reset('_token');
+        //this.reset('_token');
 
         if ( url.indexOf('exchanges') !== -1 ) {                                                                        console.log( true );
 
